@@ -1,0 +1,36 @@
+{
+  "name": "folder-cleaner-app",
+  "version": "1.0.0",
+  "description": "Folder cleaning application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder --win"  
+  },
+  "type": "module",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "electron-builder": "^latest",
+    "electron": "^latest"
+  },
+  "build": {
+    "appId": "com.yourname.foldercleaner",  
+    "productName": "Folder Cleaner", 
+    "win": {
+      "target": "nsis",  
+      "icon": "icon.ico"  },
+    "mac": {
+      "target": "dmg",  
+      "icon": "icon.icns"
+    },
+    "linux": {
+      "target": "AppImage"  
+    }
+  }
+}
+
+
+
